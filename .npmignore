@@ -3,6 +3,10 @@ node_modules
 .git
 .babelrc
 .npmignore
+.lintstagedrc.json
+.eslintrc.js
+.eslintignore
 yarn.lock
 src
 test
+log
