@@ -7,13 +7,13 @@
 /**
  * Transforms the first letter in uppercase of a given string
  * @param {string} data source string
- * @returns 
+ * @returns
  */function ucfirst(data){return data.charAt(0).toUpperCase()+data.slice(1)}
 /**
  * Transform to camelCase a string given an expression
  * @param {string} data source string
  * @param {string} exp expression used for string separation
- * @returns 
+ * @returns
  */function camelize(data,exp){return exp||(exp=/\/(.)/),ucfirst(data.replace(RegExp(exp,'g'),function(a){return a.toUpperCase()}))}
 /**
  * Fill a string to the left or right
@@ -28,5 +28,5 @@
  * @param {string} data source string
  * @param {integer} len character size to fill
  * @param {char} chr padding character, defaults to whitespace
- * @returns 
+ * @returns
  */function padLeft(data,len,chr){return pad(data,len,chr,!0)}

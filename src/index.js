@@ -17,7 +17,7 @@ export function split(data, len) {
 /**
  * Transforms the first letter in uppercase of a given string
  * @param {string} data source string
- * @returns 
+ * @returns
  */
 export function ucfirst(data) {
   return data.charAt(0).toUpperCase() + data.slice(1)
@@ -26,7 +26,7 @@ export function ucfirst(data) {
  * Transform to camelCase a string given an expression
  * @param {string} data source string
  * @param {string} exp expression used for string separation
- * @returns 
+ * @returns
  */
 export function camelize(data, exp) {
   exp || (exp = /\/(.)/)
@@ -51,7 +51,7 @@ export function pad(data, len, chr, ty) {
  * @param {string} data source string
  * @param {integer} len character size to fill
  * @param {char} chr padding character, defaults to whitespace
- * @returns 
+ * @returns
  */
 export function padLeft(data, len, chr) {
   return pad(data, len, chr, true)
