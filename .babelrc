@@ -1,6 +1,16 @@
 {
   "presets": [
-    ["minify"],
+    ["minify", {
+      "mangle": {
+         "exclude": { 
+           "data": true, 
+           "len": true,
+           "chr":true,
+           "ty":true,
+           "exp":true
+        } 
+      }
+    }],
     ["es2015", {
         "loose": true
     }]

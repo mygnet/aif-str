@@ -1,6 +1,6 @@
 {
   "name": "aif-str",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Various useful functions for string conversions and management",
   "author": {
     "name": "Martin R. Mondragon Sotelo",
@@ -9,7 +9,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "node ./test",
-    "build": "babel src -d dist",
+    "build": "babel src -d dist && node ./pk",
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix",
     "precommit": "lint-staged"
